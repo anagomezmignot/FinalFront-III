@@ -22,11 +22,12 @@ export const setFavInStorage = (dentist) => {
 
 export const removeFavInStorage = (id) => {
     let storageFavs = getFavFromStorage();
-    const index = storageFavs.findIndex(fav => fav.matricula === id);
+    const index = storageFavs.findIndex(fav => fav.id === id);
     if (index !== -1) {
         storageFavs.splice(index, 1);
         localStorage.setItem("favs", JSON.stringify(storageFavs));
         alert("Dentist removed successfully");
+        
     }
     else {
         alert("An Error has ocurred");
@@ -36,7 +37,7 @@ export const removeFavInStorage = (id) => {
 export const isFavorited = (id) => {
     const localData = getFavFromStorage();
     const isFavOnList = localData.filter(fav => {
-        return fav.matricula === id
+        return fav.id === id
     });
     return isFavOnList.length === 1;
 };

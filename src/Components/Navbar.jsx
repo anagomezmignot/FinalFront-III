@@ -40,17 +40,6 @@ const Navbar = () => {
         <Link className={`navbar-brand ${styles.navbarBrand}`} to="/home">
           DH Odonto
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample03"
-          aria-controls="navbarsExample03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
 
         <div
           className="collapse navbar-collapse justify-content-end"
@@ -69,7 +58,7 @@ const Navbar = () => {
             </li>
             <li className={`nav-item ${styles.navBarLink}`}>
               <Link className="nav-link" to="/contacto">
-                Contacto
+                Contact
               </Link>
             </li>
 

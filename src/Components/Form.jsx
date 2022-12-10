@@ -20,11 +20,11 @@ const Form = () => {
   const onSumbmitForm = (e) => {
     e.preventDefault();
     if (validarNombre(name) && /\S+@\S+\.\S+/.test(email)) {
-      document.querySelector("#mensaje").innerHTML = "Gracias " +
+      document.querySelector("#mensaje").innerHTML = "Thank you " +
       name +
-      ", te contactaremos cuando antes vía mail"
+      ", we'll contact you via email"
     } else {
-      document.querySelector("#mensaje_error").innerHTML = "Por favor verifique su información nuevamente"
+      document.querySelector("#mensaje_error").innerHTML = "Please check your information again"
     }
   };
 
@@ -33,18 +33,20 @@ const Form = () => {
       <form onSubmit={onSumbmitForm}>
         <input
           id="input1"
+          role= {"input1"}
           placeholder="Full name"
           value={name}
           onChange={onChangeName}
         />
         <input
           id="input2"
+          role= {"input2"}
           placeholder="Email"
           type="email"
           value={email}
           onChange={onChangeEmail}
         />
-        <button type="submit">Send</button>
+        <button type="submit" role={"button"}>Send</button>
       </form>
       <p id="mensaje_error"></p>
       <h3 id = "mensaje"> </h3>

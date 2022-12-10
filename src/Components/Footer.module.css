@@ -18,8 +18,8 @@
 
 .icons {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   filter: brightness(0);
 }
@@ -35,4 +35,11 @@
 .icon {
   max-width: 2rem;
   height: auto;
+}
+
+
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

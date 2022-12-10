@@ -25,7 +25,7 @@ const DetailCard = () => {
       {dentist ? (
         <>
           <h1>Detail about Dentist {dentist?.nome} </h1>
-          <section className="card col-sm-12 col-lg-6 container">
+          <section className=" col-sm-12 col-lg-6 container">
             <div
               className={`card-body row ${isDarkMode ? styles.cardDark : ""}`}
             >
@@ -37,16 +37,16 @@ const DetailCard = () => {
                 />
               </div> */}
               <div className="col-sm-12 col-lg-6">
-                <ul className="list-group">
+                <ul id="lista-detalle" className="list-group">
                   <li className="list-group-item">Name: {dentist.name}</li>
                   <li className="list-group-item">
                     Email: {dentist.email}
                   </li>
                   <li className="list-group-item">
-                    Telefono: {dentist.phone}
+                    Phone: {dentist.phone}
                   </li>
                   <li className="list-group-item">
-                   Sitio Web: {dentist.website}
+                   Website: {dentist.website}
                   </li>
                 </ul>
                 <div className="text-center">

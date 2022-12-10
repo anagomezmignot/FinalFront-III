@@ -25,7 +25,7 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
+  width: 95vw;
   justify-content: flex-start;
   padding: 1rem;
 }
@@ -123,4 +123,17 @@ tr:nth-child(even) {
 
 .card > img {
   width: 100%;
+}
+
+.navbar>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
